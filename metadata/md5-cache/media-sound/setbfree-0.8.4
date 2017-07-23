@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install
+DEPEND=virtual/jack >=media-libs/alsa-lib-1.0.0:= media-libs/liblo:= media-libs/lv2 convolution? ( media-libs/libsndfile:= >=media-libs/zita-convolver-3.1.0:= ) media-fonts/dejavu sys-apps/help2man virtual/pkgconfig
+DESCRIPTION=MIDI controlled DSP tonewheel organ
+EAPI=6
+HOMEPAGE=http://setbfree.org
+IUSE=convolution
+KEYWORDS=~amd64
+LICENSE=GPL-2+
+RDEPEND=virtual/jack >=media-libs/alsa-lib-1.0.0:= media-libs/liblo:= media-libs/lv2 convolution? ( media-libs/libsndfile:= >=media-libs/zita-convolver-3.1.0:= ) media-fonts/dejavu
+SLOT=0
+SRC_URI=https://github.com/pantherb/setBfree/archive/v0.8.4.tar.gz -> setbfree-0.8.4.tar.gz
+_eclass_exported_funcs=src_compile:- src_install:-
+_eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163
+_md5_=f58ea647f55587b3ebb41f510e1ec3ae

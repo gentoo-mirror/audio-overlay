@@ -1,0 +1,14 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+media-libs/libffado:qt4 - Install qt4-based mixer frontend
+media-libs/libffado:test-programs - Install standalone test programs
+media-sound/drumkv1:lv2 - Enable building of LV2 plugin
+media-sound/drumkv1:standalone - Enable building of standalone application
+media-sound/mididings:smf - read/write standard MIDI files through media-libs/libsmf
+media-sound/samplv1:lv2 - Enable building of LV2 plugin
+media-sound/samplv1:standalone - Enable building of standalone application
+media-sound/setbfree:convolution - enable experimental built-in convolution reverb used for leslie cabinet simulation
+media-sound/synthv1:lv2 - Enable building of LV2 plugin
+media-sound/synthv1:standalone - Enable building of standalone application

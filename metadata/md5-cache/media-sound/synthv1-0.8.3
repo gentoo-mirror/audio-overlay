@@ -1,0 +1,15 @@
+DEFINED_PHASES=configure postinst postrm prepare
+DEPEND=!qt5? ( dev-qt/qtcore:4 dev-qt/qtgui:4 ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) media-libs/libsndfile standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo )
+DESCRIPTION=Old-school all-digital 4-oscillator subtractive polyphonic synthesizer
+EAPI=6
+HOMEPAGE=http://synthv1.sourceforge.net
+IUSE=debug qt5 standalone alsa lv2 osc
+KEYWORDS=~amd64
+LICENSE=GPL-2+
+RDEPEND=!qt5? ( dev-qt/qtcore:4 dev-qt/qtgui:4 ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) media-libs/libsndfile standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo )
+REQUIRED_USE=|| ( standalone lv2 ) alsa? ( standalone )
+SLOT=0
+SRC_URI=mirror://sourceforge/synthv1/synthv1-0.8.3.tar.gz
+_eclass_exported_funcs=pkg_postrm:- pkg_postinst:- src_prepare:- src_configure:-
+_eclasses_=fdo-mime	21ef5adf81836863efa968f2a25cff64
+_md5_=50362a4bf2ece3af969323c29d374c2c
