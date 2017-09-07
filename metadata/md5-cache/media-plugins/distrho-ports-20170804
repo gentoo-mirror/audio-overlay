@@ -8,6 +8,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/alsa-lib media-libs/freetype media-libs/ladspa-sdk virtual/opengl x11-libs/libX11 x11-libs/libXext x11-libs/libXcursor x11-libs/libXrender
 REQUIRED_USE=|| ( lv2 vst )
 SLOT=0
-_eclass_exported_funcs=src_unpack:git-r3 src_prepare:- src_compile:- src_install:-
 _eclasses_=git-r3	4f7ddb4119309845d6687213171ab445
 _md5_=cde4e781c95f932d2cbf33bb067cdbfb
