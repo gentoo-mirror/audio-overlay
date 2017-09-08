@@ -8,5 +8,5 @@ LICENSE=GPL-2+
 RDEPEND=!qt5? ( dev-qt/qtcore:4 dev-qt/qtgui:4 ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) media-libs/libsndfile standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo )
 REQUIRED_USE=|| ( standalone lv2 ) alsa? ( standalone )
 SLOT=0
-_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	fdo-mime	21ef5adf81836863efa968f2a25cff64	git-r3	4f7ddb4119309845d6687213171ab445	libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
+_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	fdo-mime	995b19d3f30e956b4e1bc5a91fdc4ea7	git-r3	4f7ddb4119309845d6687213171ab445	libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
 _md5_=55665dee8f54a925a8b02b9402fdc06b
