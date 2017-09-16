@@ -6,6 +6,7 @@ media-libs/libffado:qt4 - Install qt4-based mixer frontend
 media-libs/libffado:test-programs - Install standalone test programs
 media-plugins/distrho-ports:lv2 - Enable building of LV2 plugin
 media-plugins/distrho-ports:vst - Enable building of VST plugin
+media-sound/cadence:a2jmidid - Enable a2jmidid integration
 media-sound/drumkv1:lv2 - Enable building of LV2 plugin
 media-sound/drumkv1:standalone - Enable building of standalone application
 media-sound/mididings:smf - read/write standard MIDI files through media-libs/libsmf
