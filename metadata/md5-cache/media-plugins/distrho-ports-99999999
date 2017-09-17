@@ -9,4 +9,4 @@ RDEPEND=media-libs/alsa-lib media-libs/freetype media-libs/ladspa-sdk virtual/op
 REQUIRED_USE=|| ( lv2 vst )
 SLOT=0
 _eclasses_=git-r3	4f7ddb4119309845d6687213171ab445
-_md5_=fe49a04dc57b1f5a482c8cd57e4dd59f
+_md5_=f26109d847fa8acd217a7fa39cd02374
