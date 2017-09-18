@@ -7,5 +7,5 @@ IUSE=-pulseaudio a2jmidid
 LICENSE=GPL-2
 RDEPEND=virtual/jack dev-python/PyQt4[X,svg] dev-python/dbus-python >=media-sound/ladish-9999 a2jmidid? ( media-sound/a2jmidid ) pulseaudio? ( media-sound/pulseaudio[jack] )
 SLOT=0
-_eclasses_=git-r3	4f7ddb4119309845d6687213171ab445
+_eclasses_=git-r3	52a888802d25387c2c74cb845d1219bc
 _md5_=79a71f007568ad0f8aa48ff3afdafbc8
