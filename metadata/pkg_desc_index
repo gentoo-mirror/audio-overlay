@@ -6,6 +6,7 @@ media-sound/cadence 9999-r1: Collection of tools useful for audio production
 media-sound/drumkv1 0.8.3 0.8.4 9999: An old-school all-digital drum-kit sampler synthesizer with stereo fx
 media-sound/ladish 1 9999: LADI Session Handler - a session management system for JACK applications
 media-sound/mididings 20120419 99999999: A MIDI router and processor based on Python, supporting ALSA and JACK MIDI
+media-sound/padthv1 0.8.4 9999: Old-school polyphonic additive synthesizer
 media-sound/pure-data 0.47_p1: Visual programming language for multimedia
 media-sound/samplv1 0.8.3 0.8.4 9999: Old-school polyphonic sampler
 media-sound/sequencer64 0.93.0 9999: Reboot of seq24, a minimal loop based midi sequencer

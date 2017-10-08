@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure postinst postrm prepare unpack
+DEPEND=>=sci-libs/fftw-3 !qt5? ( dev-qt/qtcore:4 dev-qt/qtgui:4 ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo ) >=dev-vcs/git-1.8.2.1 >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=Old-school polyphonic additive synthesizer
+EAPI=6
+HOMEPAGE=http://padthv1.sourceforge.net
+IUSE=debug qt5 standalone alsa lv2 osc
+LICENSE=GPL-2+
+RDEPEND=>=sci-libs/fftw-3 !qt5? ( dev-qt/qtcore:4 dev-qt/qtgui:4 ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo )
+REQUIRED_USE=|| ( standalone lv2 ) alsa? ( standalone )
+SLOT=0
+_eclasses_=autotools	dc412f38566b91012efd58b9c203e6c3	git-r3	52a888802d25387c2c74cb845d1219bc	libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af	xdg-utils	f2c8335407f0b935b0a96d4adf23ef25
+_md5_=bc52ff7c659b3954ca6fe8fe6946b84b
