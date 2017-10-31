@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install setup unpack
+DEPEND=udev? ( virtual/libudev ) osc? ( media-libs/liblo ) python? ( dev-python/cython ) >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Library for easy interaction with monome devices
+EAPI=6
+HOMEPAGE=https://github.com/monome/libmonome
+IUSE=osc -python udev
+LICENSE=ISC
+RDEPEND=udev? ( virtual/libudev ) osc? ( media-libs/liblo ) python? ( dev-python/cython )
+SLOT=0
+_eclasses_=git-r3	52a888802d25387c2c74cb845d1219bc	multilib	97f470f374f2e94ccab04a2fb21d811e	multiprocessing	6f5991c7101863d0b29df63990ad852e	python-any-r1	27d7f9da7187d283b7f3eae8390b7b09	python-utils-r1	c9de01becf9df3f8c10aeec3dc693f5d	toolchain-funcs	185a06792159ca143528e7010368e8af	waf-utils	d1ea2758053cbb7c5b38b8f88654468d
+_md5_=2b15078ec276f34bd5d9540524b16565
