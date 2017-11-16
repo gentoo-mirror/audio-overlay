@@ -16,5 +16,4 @@ media-sound/sequencer64 0.93.0 9999: Reboot of seq24, a minimal loop based midi 
 media-sound/serialosc 9999: Multi-device, bonjour-capable monome OSC server
 media-sound/setbfree 0.8.4 9999: MIDI controlled DSP tonewheel organ
 media-sound/synthv1 0.8.3 0.8.4 0.8.5 9999: Old-school all-digital 4-oscillator subtractive polyphonic synthesizer
-media-video/praxis-live-bin 3.1.0: Hybrid visual IDE for creative coding
 x11-libs/ntk 1.3.1000 9999: FLTK fork, improved rendering via Cairo, streamlined and enhanced widget set
