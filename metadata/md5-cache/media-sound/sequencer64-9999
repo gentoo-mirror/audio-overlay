@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=dev-cpp/gtkmm:2.4 >=dev-libs/libsigc++-2.2:2 media-libs/libpng:= media-libs/alsa-lib jack? ( virtual/jack ) lash? ( || ( media-sound/lash media-sound/ladish[lash] ) )
 SLOT=0
 _eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	227b041a120d309fdefbebb3b8c1dfa9	git-r3	52a888802d25387c2c74cb845d1219bc	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
-_md5_=521e080324ee963e1143ac1e5a2e12ec
+_md5_=e463bf7e3e025e0c6e8af0e0a888b360
