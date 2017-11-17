@@ -3,20 +3,15 @@
 Gentoo/Funtoo overlay containing pro audio applications
 
 ## How to use this overlay
-- Add an entry to [`/etc/portage/repos.conf`](https://wiki.gentoo.org/wiki//etc/portage/repos.conf):
+- Add the following entry to [`/etc/portage/repos.conf`](https://wiki.gentoo.org/wiki//etc/portage/repos.conf) and sync using `emerge --sync`
 ```ini
 [audio-overlay]
-# Use the location where you store your overlays
-location = /usr/local/overlay/audio-overlay
+location = /<path>/<to>/<your>/<overlays>/audio-overlay
 sync-type = git
 sync-uri = https://github.com/gentoo-audio/audio-overlay.git
 auto-sync = yes
 ```
-- Sync
-```sh
-emerge --sync
-```
-- You're all set. Go and install a package :)
+- Or if you use [layman](https://wiki.gentoo.org/wiki/Layman) add the overlay using `layman -a audio-overlay` and sync using `layman -s audio-overlay`
 
 ## Contact
 Join us at the `#proaudio-overlay` channel at `irc.freenode.org` or [create an issue](https://github.com/gentoo-audio/audio-overlay/issues/new).
@@ -42,7 +37,7 @@ Every pull request must pass the following tests before it can be merged:
 
 #### Daily checks
 Every day the following tests are run:
-- A random ebuild is picked and emerged to validate that emerging it can still be emerged correctly. This is done in a clean amd64 stage3.
+- A random ebuild is picked and emerged to validate that it can still be emerged correctly. This is done in a clean amd64 stage3.
 <br>Run this test using `./tests/emerge-random-ebuild.sh`.
 <br>Note that this will create a binary package cache at `${HOME}/.portage-pkgdir`.
 - A check if a new version of any of the packages in the overlay is released. This is done using [newversionchecker](https://github.com/simonvanderveldt/newversionchecker). If a new version has been released an issue requesting a version bump will be created.
