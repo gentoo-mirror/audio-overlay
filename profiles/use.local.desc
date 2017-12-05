@@ -2,8 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-media-libs/libffado:qt4 - Install qt4-based mixer frontend
-media-libs/libffado:test-programs - Install standalone test programs
 media-plugins/distrho-ports:lv2 - Enable building of LV2 plugin
 media-plugins/distrho-ports:vst - Enable building of VST plugin
 media-sound/cadence:a2jmidid - Enable a2jmidid integration
