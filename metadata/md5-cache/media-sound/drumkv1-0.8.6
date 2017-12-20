@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure postinst postrm prepare
+DEPEND=!qt5? ( dev-qt/qtcore:4 dev-qt/qtgui:4 ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) media-libs/libsndfile standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo )
+DESCRIPTION=An old-school all-digital drum-kit sampler synthesizer with stereo fx
+EAPI=6
+HOMEPAGE=http://drumkv1.sourceforge.net/
+IUSE=debug qt5 standalone alsa lv2 osc
+KEYWORDS=~amd64
+LICENSE=GPL-2+
+RDEPEND=!qt5? ( dev-qt/qtcore:4 dev-qt/qtgui:4 ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) media-libs/libsndfile standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo )
+REQUIRED_USE=|| ( standalone lv2 ) alsa? ( standalone )
+SLOT=0
+SRC_URI=mirror://sourceforge/drumkv1/drumkv1-0.8.6.tar.gz
+_eclasses_=xdg-utils	f2c8335407f0b935b0a96d4adf23ef25
+_md5_=459615d438be989c1f21d8c8e87d7419
