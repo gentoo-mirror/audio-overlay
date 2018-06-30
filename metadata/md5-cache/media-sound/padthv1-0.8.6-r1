@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure postinst postrm prepare
+DEPEND=>=sci-libs/fftw-3 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo )
+DESCRIPTION=Old-school polyphonic additive synthesizer
+EAPI=6
+HOMEPAGE=http://padthv1.sourceforge.net
+IUSE=debug standalone alsa lv2 osc
+KEYWORDS=~amd64
+LICENSE=GPL-2+
+RDEPEND=>=sci-libs/fftw-3 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo )
+REQUIRED_USE=|| ( standalone lv2 ) alsa? ( standalone )
+SLOT=0
+SRC_URI=mirror://sourceforge/padthv1/padthv1-0.8.6.tar.gz
+_eclasses_=xdg-utils	f2c8335407f0b935b0a96d4adf23ef25
+_md5_=577438c1c26a2e82a22e486bc89e997c
