@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -36,6 +36,8 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
+PATCHES=( "${FILESDIR}"/${PN}-dont-compress-manpages.patch )
+
 src_prepare() {
 	if [[ ${PV} == *9999 ]]; then
 		eautoreconf
@@ -47,6 +49,7 @@ src_configure() {
 	# Disable stripping
 	echo "QMAKE_STRIP=" >> src/src_core.pri.in
 	echo "QMAKE_STRIP=" >> src/src_jack.pri.in
+	echo "QMAKE_STRIP=" >> src/src_ui.pri.in
 
 	local -a myeconfargs=(
 		$(use_enable debug)
