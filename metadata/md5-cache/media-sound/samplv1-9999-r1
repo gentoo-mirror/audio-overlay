@@ -9,5 +9,5 @@ PROPERTIES=live
 RDEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 media-libs/libsndfile standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo )
 REQUIRED_USE=|| ( standalone lv2 ) alsa? ( standalone )
 SLOT=0
-_eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	git-r3	562b380fc59ae6a8622171d0acb777d1	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	1d91b03d42ab6308b5f4f6b598ed110e	toolchain-funcs	a3a237ef6c0c58546bf23b2c382f9e56	xdg-utils	14d00d009167652b1fa363e55effe213
+_eclasses_=autotools	1bf086cdd7356f5c9a4acd9727bd2065	git-r3	562b380fc59ae6a8622171d0acb777d1	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	1d91b03d42ab6308b5f4f6b598ed110e	toolchain-funcs	a3a237ef6c0c58546bf23b2c382f9e56	xdg-utils	92c60e3d7f481da372979bdcd33e5109
 _md5_=9adbf2e29ff7e8c83ece9310547c3e86
