@@ -34,6 +34,7 @@ RDEPEND="${DEPEND}
 	virtual/ffmpeg
 	virtual/opengl
 	virtual/udev
+	x11-libs/gtk+:3
 	x11-libs/cairo[xcb]
 	x11-libs/libX11
 	x11-libs/libXau
@@ -49,23 +50,20 @@ RDEPEND="${DEPEND}
 	x11-libs/xcb-util-wm
 "
 
-QA_PREBUILT="opt/bitwig-studio/lib/engine/*"
+QA_PREBUILT="
+	opt/bitwig-studio/bin/*
+	opt/bitwig-studio/lib/engine/*
+"
+
 QA_PRESTRIPPED="
-	opt/bitwig-studio/lib/bitwig-studio/libcairo.so.2
-	opt/bitwig-studio/lib/bitwig-studio/libfreetype.so.6
-	opt/bitwig-studio/lib/bitwig-studio/libharfbuzz.so.0
-	opt/bitwig-studio/lib/bitwig-studio/liblwjgl.so
-	opt/bitwig-studio/lib/bitwig-studio/libpng16.so.16
-	opt/bitwig-studio/lib/bitwig-studio/libXau.so.6
-	opt/bitwig-studio/lib/bitwig-studio/libxcb-xkb.so.1
-	opt/bitwig-studio/lib/bitwig-studio/libXcursor.so.1
-	opt/bitwig-studio/lib/bitwig-studio/libXdmcp.so.6
-	opt/bitwig-studio/lib/bitwig-studio/libz.so.1
 	opt/bitwig-studio/bitwig-studio
-	opt/bitwig-studio/bin32/BitwigPluginHost32
 	opt/bitwig-studio/bin/BitwigStudioEngine
 	opt/bitwig-studio/bin/bitwig-vamphost
-	opt/bitwig-studio/bin/BitwigPluginHost64"
+	opt/bitwig-studio/bin/BitwigPluginHost64
+	opt/bitwig-studio/bin32/BitwigPluginHost32
+	opt/bitwig-studio/lib/bitwig-studio/.*
+	opt/bitwig-studio/lib/vamp-plugins/.*
+"
 
 S=${WORKDIR}
 
@@ -80,6 +78,7 @@ src_install() {
 	fperms +x ${BITWIG_HOME}/bin/BitwigStudioEngine
 	fperms +x ${BITWIG_HOME}/bin/bitwig-vamphost
 	fperms +x ${BITWIG_HOME}/bin/show-splash-gtk
+	fperms +x ${BITWIG_HOME}/bin/show-file-dialog-gtk3
 	fperms +x ${BITWIG_HOME}/bin32/BitwigPluginHost32
 	dosym ${BITWIG_HOME}/bitwig-studio /usr/bin/bitwig-studio
 
