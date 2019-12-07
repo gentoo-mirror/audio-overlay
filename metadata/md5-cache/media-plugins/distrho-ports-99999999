@@ -9,5 +9,5 @@ PROPERTIES=live
 RDEPEND=media-libs/alsa-lib media-libs/freetype media-libs/ladspa-sdk virtual/opengl x11-libs/libX11 x11-libs/libXext x11-libs/libXcursor x11-libs/libXrender
 REQUIRED_USE=|| ( lv2 vst )
 SLOT=0
-_eclasses_=git-r3	562b380fc59ae6a8622171d0acb777d1
+_eclasses_=git-r3	6d22636df236df4cc8475f7b7668bdcd
 _md5_=f26109d847fa8acd217a7fa39cd02374
