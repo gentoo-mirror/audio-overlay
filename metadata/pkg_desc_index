@@ -11,6 +11,7 @@ media-sound/carla 9999: Fully-featured audio plugin host, supports many audio dr
 media-sound/drumkv1 0.9.9 0.9.10 0.9.11 9999-r1: An old-school all-digital drum-kit sampler synthesizer with stereo fx
 media-sound/guitarix 9999: A simple Linux Guitar Amplifier for jack with one input and two outputs
 media-sound/ladish 1 9999: LADI Session Handler - a session management system for JACK applications
+media-sound/luppp 1.2.1 9999: Live performance looping tool
 media-sound/mididings 20120419 99999999: A MIDI router and processor based on Python, supporting ALSA and JACK MIDI
 media-sound/padthv1 0.9.4 0.9.10 0.9.11 9999-r1: Old-school polyphonic additive synthesizer
 media-sound/pure-data 0.47_p1: Visual programming language for multimedia
