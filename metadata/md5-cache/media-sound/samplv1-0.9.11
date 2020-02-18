@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( standalone lv2 ) alsa? ( standalone )
 SLOT=0
 SRC_URI=mirror://sourceforge/samplv1/samplv1-0.9.11.tar.gz
 _eclasses_=xdg-utils	ff2ff954e6b17929574eee4efc5152ba
-_md5_=a64df1ba7e8aeccc7de8f799aee0595f
+_md5_=7b722824f09fc7423424bc4609974f29
