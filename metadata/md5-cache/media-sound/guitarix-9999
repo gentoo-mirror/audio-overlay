@@ -9,5 +9,5 @@ PROPERTIES=live
 RDEPEND=media-libs/libsndfile x11-libs/gtk+:2 virtual/jack dev-cpp/gtkmm:2.4 dev-libs/boost dev-cpp/eigen:3 sci-libs/fftw:3.0 >=media-libs/zita-convolver-3 media-libs/zita-resampler standalone? ( media-libs/lilv media-libs/liblrdf media-fonts/roboto ) ladspa? ( media-libs/ladspa-sdk ) lv2? ( media-libs/lv2 ) zeroconf? ( net-dns/avahi ) bluetooth? ( net-wireless/bluez )
 REQUIRED_USE=|| ( standalone lv2 ladspa ) ladspa? ( standalone )
 SLOT=0
-_eclasses_=git-r3	86a0188f2ad9eb3d65e4d031ab8a0422	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	python-any-r1	3b59474e577cf775a757884b62a6d9cf	python-utils-r1	3ab704558125f1813be1cc37ed9e2667	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	waf-utils	1fab5379519d4b71bff5790435a71986
+_eclasses_=git-r3	86a0188f2ad9eb3d65e4d031ab8a0422	multilib	1d91b03d42ab6308b5f4f6b598ed110e	multiprocessing	cac3169468f893670dac3e7cb940e045	python-any-r1	3b59474e577cf775a757884b62a6d9cf	python-utils-r1	89113cd44c8118e781d18387d4256fe3	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c	waf-utils	1fab5379519d4b71bff5790435a71986
 _md5_=166475027d5cf90aba68db53d55e9836
