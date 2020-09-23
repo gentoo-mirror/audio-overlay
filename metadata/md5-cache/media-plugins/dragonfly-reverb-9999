@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl] >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEFINED_PHASES=compile configure install prepare unpack
+DESCRIPTION=A set of free reverb effects
+EAPI=7
+HOMEPAGE=https://github.com/michaelwillis/dragonfly-reverb
+IUSE=standalone
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=x11-libs/libX11 virtual/opengl standalone? ( virtual/jack )
+RESTRICT=mirror
+SLOT=0
+_eclasses_=autotools	7d999b62b8749fad43fff00620cedf47	git-r3	3e7ec3d6619213460c85e2aa48398441	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	98584e405e2b0264d37e8f728327fed1	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
+_md5_=3b2180eba5743baa2ee94b237e38557a
