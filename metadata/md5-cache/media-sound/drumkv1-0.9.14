@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( standalone lv2 ) alsa? ( standalone )
 SLOT=0
 SRC_URI=mirror://sourceforge/drumkv1/drumkv1-0.9.14.tar.gz
 _eclasses_=xdg-utils	ff2ff954e6b17929574eee4efc5152ba
-_md5_=476746648e2f823251723b3b7d326ade
+_md5_=6f0672aaac73bd8a220e1c596a93fd60
