@@ -2,10 +2,10 @@ DEFINED_PHASES=compile configure install setup unpack
 DEPEND=dev-cpp/gtkmm:2.4 x11-libs/gtk+:2 x11-libs/cairo media-libs/lv2 media-libs/lvtk[gtk2] >=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=A set of plugins to deteriorate the sound quality
 EAPI=6
-HOMEPAGE=https://objectivewave.wordpress.com/deteriorate-lv2
+HOMEPAGE=https://github.com/blablack/deteriorate-lv2
 LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=dev-cpp/gtkmm:2.4 x11-libs/gtk+:2 x11-libs/cairo media-libs/lv2 media-libs/lvtk[gtk2]
 SLOT=0
 _eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	multilib	98584e405e2b0264d37e8f728327fed1	multiprocessing	cac3169468f893670dac3e7cb940e045	python-any-r1	54a3178500786b0a7ede4a23b7f2a6ad	python-utils-r1	e41e32d357e5bdd388b5be2ce24f3883	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb	waf-utils	cf9742c01975dc707eb982114a9d70fa
-_md5_=74235c41d69c77c24df9cc56fc2c762a
+_md5_=80befe50afc0b4173956adbf0f49132f
