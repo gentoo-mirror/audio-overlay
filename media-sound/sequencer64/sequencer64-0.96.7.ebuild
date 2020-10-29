@@ -22,6 +22,7 @@ RESTRICT="mirror"
 IUSE="cli jack lash qt5"
 
 RDEPEND="
+	dev-cpp/gtkmm:2.4
 	>=dev-libs/libsigc++-2.2:2
 	media-libs/libpng:=
 	media-libs/alsa-lib
@@ -31,9 +32,12 @@ RDEPEND="
 		dev-qt/qtcore:5
 		dev-qt/qtgui:5
 		dev-qt/qtwidgets:5
-	)
-	!qt5? ( dev-cpp/gtkmm:2.4 )"
+	)"
 DEPEND="${RDEPEND}"
+
+PATCHES=(
+	"${FILESDIR}/${PN}-configure-add-missing-qtwidgets-check.patch"
+)
 
 src_prepare()
 {

@@ -35,6 +35,10 @@ RDEPEND="
 	!qt5? ( dev-cpp/gtkmm:2.4 )"
 DEPEND="${RDEPEND}"
 
+PATCHES=(
+	"${FILESDIR}/${PN}-configure-add-missing-qtwidgets-check.patch"
+)
+
 src_prepare()
 {
 	default
