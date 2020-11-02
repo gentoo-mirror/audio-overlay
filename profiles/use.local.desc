@@ -13,8 +13,6 @@ media-sound/carla:rdf - Enable LADSPA-RDF support
 media-sound/carla:sf2 - Enable builtin SF2 sample support using media-sound/fluidsynth
 media-sound/drumkv1:lv2 - Enable building of LV2 plugin
 media-sound/drumkv1:standalone - Enable building of standalone application
-media-sound/guitarix:lv2 - Enable building of LV2 plugin
-media-sound/guitarix:standalone - Enable building of standalone application
 media-sound/padthv1:lv2 - Enable building of LV2 plugin
 media-sound/padthv1:standalone - Enable building of standalone application
 media-sound/samplv1:lv2 - Enable building of LV2 plugin
