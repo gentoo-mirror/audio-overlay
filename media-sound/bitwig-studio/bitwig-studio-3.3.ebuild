@@ -1,9 +1,5 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-
-# TODO
-# - What about bundled libs? Shouldn't they be removed?
-# - Install docs in correct location? (currently in /opt/bitwig-studio/resources/doc)
 
 EAPI=6
 
@@ -17,7 +13,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="mirror"
 
-IUSE="+jack"
+IUSE="+jack cpu_flags_x86_sse4_1"
+REQUIRED_USE="cpu_flags_x86_sse4_1"
 
 DEPEND=""
 RDEPEND="${DEPEND}
@@ -34,8 +31,8 @@ RDEPEND="${DEPEND}
 	media-video/ffmpeg
 	virtual/opengl
 	virtual/udev
-	x11-libs/gtk+:3
 	x11-libs/cairo[X]
+	x11-libs/gtk+:3
 	x11-libs/libX11
 	x11-libs/libXau
 	x11-libs/libXcursor
@@ -48,18 +45,12 @@ RDEPEND="${DEPEND}
 	x11-libs/libxkbfile
 	x11-libs/pixman
 	x11-libs/xcb-util-wm
-"
-
-QA_PREBUILT="
-	opt/bitwig-studio/bin/*
-	opt/bitwig-studio/lib/engine/*
+	x11-libs/libXtst
 "
 
 QA_PRESTRIPPED="
 	opt/bitwig-studio/bitwig-studio
-	opt/bitwig-studio/bin/BitwigStudioEngine
-	opt/bitwig-studio/bin/BitwigVampHost
-	opt/bitwig-studio/bin/BitwigPluginHost64
+	opt/bitwig-studio/bin/.*
 	opt/bitwig-studio/bin32/BitwigPluginHost32
 	opt/bitwig-studio/lib/bitwig-studio/.*
 	opt/bitwig-studio/lib/vamp-plugins/.*
@@ -76,9 +67,10 @@ src_install() {
 	fperms +x ${BITWIG_HOME}/bin/BitwigPluginHost64
 	fperms +x ${BITWIG_HOME}/bin/BitwigStudio
 	fperms +x ${BITWIG_HOME}/bin/BitwigStudioEngine
+	fperms +x ${BITWIG_HOME}/bin/BitwigStudioEngineAVX2
 	fperms +x ${BITWIG_HOME}/bin/BitwigVampHost
-	fperms +x ${BITWIG_HOME}/bin/show-splash-gtk
 	fperms +x ${BITWIG_HOME}/bin/show-file-dialog-gtk3
+	fperms +x ${BITWIG_HOME}/bin/show-splash-gtk
 	fperms +x ${BITWIG_HOME}/bin32/BitwigPluginHost32
 	dosym ${BITWIG_HOME}/bitwig-studio /usr/bin/bitwig-studio
 
