@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile install unpack
+DEFINED_PHASES=compile install prepare unpack
 DEPEND=virtual/jack >=media-libs/alsa-lib-1.0.0:= media-libs/liblo:= media-libs/lv2 convolution? ( media-libs/libsndfile:= >=media-libs/zita-convolver-3.1.0:= ) media-fonts/dejavu sys-apps/help2man virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=MIDI controlled DSP tonewheel organ
 EAPI=6
@@ -7,6 +7,7 @@ IUSE=convolution
 LICENSE=GPL-2+
 PROPERTIES=live
 RDEPEND=virtual/jack >=media-libs/alsa-lib-1.0.0:= media-libs/liblo:= media-libs/lv2 convolution? ( media-libs/libsndfile:= >=media-libs/zita-convolver-3.1.0:= ) media-fonts/dejavu
+RESTRICT=mirror
 SLOT=0
 _eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
-_md5_=f58ea647f55587b3ebb41f510e1ec3ae
+_md5_=345076d7f74e81461f9a8a477b8cfa83
