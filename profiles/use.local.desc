@@ -17,6 +17,7 @@ media-sound/padthv1:lv2 - Enable building of LV2 plugin
 media-sound/padthv1:standalone - Enable building of standalone application
 media-sound/samplv1:lv2 - Enable building of LV2 plugin
 media-sound/samplv1:standalone - Enable building of standalone application
+media-sound/sc3-plugins:supernova - Enable building the supernova server
 media-sound/sequencer64:cli - Enable CLI
 media-sound/setbfree:convolution - enable experimental built-in convolution reverb used for leslie cabinet simulation
 media-sound/synthv1:lv2 - Enable building of LV2 plugin
