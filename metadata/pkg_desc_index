@@ -8,6 +8,7 @@ media-plugins/deteriorate-lv2 1.0.6 1.0.7 9999: A set of plugins to deteriorate 
 media-plugins/distrho-ports 20200714 20201227 99999999: Linux ports of Distrho plugins
 media-plugins/dragonfly-reverb 3.2.1 9999: A set of free reverb effects
 media-plugins/fabla 1.3.2-r1 1.9999 2.9999: LV2 drum sampler plugin
+media-plugins/nekobi 9999: Simple single-oscillator synth based on the Roland TB-303
 media-plugins/sorcer 1.1.3-r1 9999: Polyphonic wavetable synth LV2 plugin
 media-plugins/x42-plugins 20200714-r1: Collection of LV2 plugins
 media-sound/bitwig-studio 1.3.16 2.5.1 3.0.3 3.1.2 3.2.8 3.3: Multi-platform music-creation system for production, performance and DJing
