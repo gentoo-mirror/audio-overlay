@@ -6,6 +6,11 @@ media-libs/zita-resampler:standalone - Enable building of standalone application
 media-plugins/distrho-ports:lv2 - Enable building of LV2 plugin
 media-plugins/distrho-ports:vst - Enable building of VST plugin
 media-plugins/dragonfly-reverb:standalone - Enable building of standalone application
+media-plugins/mverb:dssi - Enable building of DSSI plugin
+media-plugins/mverb:ladspa - Enable building of LADSPA plugin
+media-plugins/mverb:lv2 - Enable building of LV2 plugin
+media-plugins/mverb:standalone - Enable building of standalone application
+media-plugins/mverb:vst - Enable building of VST plugin
 media-plugins/nekobi:dssi - Enable building of DSSI plugin
 media-plugins/nekobi:lv2 - Enable building of LV2 plugin
 media-plugins/nekobi:standalone - Enable building of standalone application
