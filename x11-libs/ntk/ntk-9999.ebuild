@@ -1,28 +1,30 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-PYTHON_COMPAT=( python2_7 python3_4 )
+# Required by waf
+PYTHON_COMPAT=( python3_6 python3_7 python3_8 python3_9 )
 PYTHON_REQ_USE='threads(+)'
 
 inherit python-any-r1 waf-utils
 
 DESCRIPTION="FLTK fork, improved rendering via Cairo, streamlined and enhanced widget set"
-HOMEPAGE="http://non.tuxfamily.org/wiki/NTK"
+HOMEPAGE="https://non.tuxfamily.org/wiki/NTK"
 if [[ ${PV} == *9999 ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="https://git.tuxfamily.org/non/fltk.git/"
+	EGIT_REPO_URI="https://git.tuxfamily.org/non/fltk.git"
 	KEYWORDS=""
 else
-	SRC_URI="https://github.com/original-male/ntk/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://git.tuxfamily.org/non/fltk.git/snapshot/fltk-${PV}.tar.gz"
 	KEYWORDS="~amd64"
+	S="${WORKDIR}/fltk-${PV}"
 fi
 LICENSE="FLTK"
 SLOT="0"
+RESTRICT="mirror"
 
 IUSE="-opengl"
-REQUIRED_USE=""
 
 RDEPEND="x11-libs/libX11
 	media-libs/fontconfig
