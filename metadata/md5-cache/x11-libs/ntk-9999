@@ -1,12 +1,13 @@
 DEFINED_PHASES=compile configure install setup unpack
-DEPEND=|| ( >=dev-lang/python-2.7.5-r2:2.7[threads(+)] ) x11-libs/libX11 media-libs/fontconfig x11-libs/libXft x11-libs/cairo[X] virtual/jpeg:* media-libs/libpng:* opengl? ( media-libs/glu ) >=dev-vcs/git-1.8.2.1[curl]
+DEPEND=|| ( dev-lang/python:3.9[threads(+)] dev-lang/python:3.8[threads(+)] dev-lang/python:3.7[threads(+)] ) x11-libs/libX11 media-libs/fontconfig x11-libs/libXft x11-libs/cairo[X] virtual/jpeg:* media-libs/libpng:* opengl? ( media-libs/glu ) >=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=FLTK fork, improved rendering via Cairo, streamlined and enhanced widget set
 EAPI=6
-HOMEPAGE=http://non.tuxfamily.org/wiki/NTK
+HOMEPAGE=https://non.tuxfamily.org/wiki/NTK
 IUSE=-opengl
 LICENSE=FLTK
 PROPERTIES=live
 RDEPEND=x11-libs/libX11 media-libs/fontconfig x11-libs/libXft x11-libs/cairo[X] virtual/jpeg:* media-libs/libpng:* opengl? ( media-libs/glu )
+RESTRICT=mirror
 SLOT=0
 _eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	python-any-r1	0a79a9b53fce4525f438f8ea9695fb88	python-utils-r1	69861348186337fa4b269de5826004b3	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	waf-utils	0a6e492cdcbd52b1304cfcd9eba5abc6
-_md5_=8f1c17925a120a900b6eb82506eec511
+_md5_=e5fa4eec80a0aa6f4cc532ba6fe6e600
