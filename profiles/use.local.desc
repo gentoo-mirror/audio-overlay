@@ -3,6 +3,10 @@
 # * generated automatically using pmaint *
 
 media-libs/zita-resampler:standalone - Enable building of standalone application
+media-plugins/adlplug:lv2 - Enable building of LV2 plugin
+media-plugins/adlplug:nsm - Enable New Session Manager support
+media-plugins/adlplug:standalone - Enable building of standalone application
+media-plugins/adlplug:vst - Enable building of VST plugin
 media-plugins/distrho-ports:lv2 - Enable building of LV2 plugin
 media-plugins/distrho-ports:vst - Enable building of VST plugin
 media-plugins/dragonfly-reverb:standalone - Enable building of standalone application
@@ -15,6 +19,10 @@ media-plugins/nekobi:dssi - Enable building of DSSI plugin
 media-plugins/nekobi:lv2 - Enable building of LV2 plugin
 media-plugins/nekobi:standalone - Enable building of standalone application
 media-plugins/nekobi:vst - Enable building of VST plugin
+media-plugins/opnplug:lv2 - Enable building of LV2 plugin
+media-plugins/opnplug:nsm - Enable New Session Manager support
+media-plugins/opnplug:standalone - Enable building of standalone application
+media-plugins/opnplug:vst - Enable building of VST plugin
 media-sound/cadence:a2jmidid - Enable a2jmidid integration
 media-sound/cadence:ladish - Enable installation of Claudia, a LADISH front-end
 media-sound/carla:gtk2 - Use gtk-2 instead of gtk-3
