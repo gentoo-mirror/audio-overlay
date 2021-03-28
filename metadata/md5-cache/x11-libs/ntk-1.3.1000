@@ -3,6 +3,7 @@ DEPEND=|| ( >=dev-lang/python-2.7.5-r2:2.7[threads(+)] ) x11-libs/libX11 media-l
 DESCRIPTION=FLTK fork, improved rendering via Cairo, streamlined and enhanced widget set
 EAPI=6
 HOMEPAGE=http://non.tuxfamily.org/wiki/NTK
+INHERIT=python-any-r1 waf-utils
 IUSE=-opengl
 KEYWORDS=~amd64
 LICENSE=FLTK
@@ -10,5 +11,5 @@ RDEPEND=x11-libs/libX11 media-libs/fontconfig x11-libs/libXft x11-libs/cairo[X] 
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/gentoo-audio/ntk/archive/v1.3.1000.tar.gz -> ntk-1.3.1000.tar.gz
-_eclasses_=multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	python-any-r1	0a79a9b53fce4525f438f8ea9695fb88	python-utils-r1	2dc8e06a3429719b43e9140f7292a425	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	waf-utils	0a6e492cdcbd52b1304cfcd9eba5abc6
+_eclasses_=toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	python-utils-r1	543b53e4d003ebd889082f4673e52af5	python-any-r1	690a993463cd2ebcde40ccdf1bd9ba98	multiprocessing	cac3169468f893670dac3e7cb940e045	waf-utils	0a6e492cdcbd52b1304cfcd9eba5abc6
 _md5_=3dad8989c4dd829252be94435e0efa35

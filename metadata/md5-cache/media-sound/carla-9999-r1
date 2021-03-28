@@ -4,11 +4,12 @@ DEPEND=python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-e
 DESCRIPTION=Fully-featured audio plugin host, supports many audio drivers and plugin formats
 EAPI=7
 HOMEPAGE=http://kxstudio.linuxaudio.org/Applications:Carla
+INHERIT=python-single-r1 xdg-utils git-r3
 IUSE=alsa gtk gtk2 opengl osc -pulseaudio rdf sf2 sndfile X python_single_target_python3_7 python_single_target_python3_8
 LICENSE=GPL-2 LGPL-3
 PROPERTIES=live
 RDEPEND=python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_7? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_7(-)] ) python_single_target_python3_8? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_8(-)] ) virtual/jack alsa? ( media-libs/alsa-lib ) gtk? ( x11-libs/gtk+:3 ) gtk2? ( x11-libs/gtk+:2 ) osc? ( media-libs/liblo media-libs/pyliblo ) pulseaudio? ( media-sound/pulseaudio ) rdf? ( dev-python/rdflib ) sf2? ( media-sound/fluidsynth ) sndfile? ( media-libs/libsndfile ) X? ( x11-base/xorg-server )
 REQUIRED_USE=^^ ( python_single_target_python3_7 python_single_target_python3_8 )
 SLOT=0
-_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	multilib	d410501a125f99ffb560b0c523cd3d1e	python-single-r1	d3100de905f978df912135806cf27188	python-utils-r1	2dc8e06a3429719b43e9140f7292a425	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_eclasses_=toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	python-utils-r1	543b53e4d003ebd889082f4673e52af5	python-single-r1	c7de0087e87a282f2faec351822e097c	xdg-utils	ff2ff954e6b17929574eee4efc5152ba	git-r3	3e7ec3d6619213460c85e2aa48398441
 _md5_=68e477cb4b849ea33b5e1aef5f2bbc91
