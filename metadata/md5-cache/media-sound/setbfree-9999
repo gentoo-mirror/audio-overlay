@@ -3,11 +3,12 @@ DEPEND=virtual/jack >=media-libs/alsa-lib-1.0.0:= media-libs/liblo:= media-libs/
 DESCRIPTION=MIDI controlled DSP tonewheel organ
 EAPI=6
 HOMEPAGE=http://setbfree.org
+INHERIT=toolchain-funcs multilib git-r3
 IUSE=convolution
 LICENSE=GPL-2+
 PROPERTIES=live
 RDEPEND=virtual/jack >=media-libs/alsa-lib-1.0.0:= media-libs/liblo:= media-libs/lv2 convolution? ( media-libs/libsndfile:= >=media-libs/zita-convolver-3.1.0:= ) media-fonts/dejavu media-libs/ftgl x11-libs/libX11
 RESTRICT=mirror
 SLOT=0
-_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_eclasses_=toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	git-r3	b8e8c92aa5fe8df7187e466138eb4e52
 _md5_=96f214c42f47b7a13ef39f1098332900
