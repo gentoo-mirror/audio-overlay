@@ -1,16 +1,16 @@
 DEFINED_PHASES=compile configure install prepare setup unpack
-DEPEND=media-libs/alsa-lib media-sound/jack2[dbus] sys-apps/dbus dev-libs/expat lash? ( !media-sound/lash ) python_single_target_python3_8? ( dev-lang/python:3.8[threads(+)] >=dev-lang/python-exec-2:=[python_targets_python3_8] ) doc? ( app-doc/doxygen ) virtual/pkgconfig
+DEPEND=media-libs/alsa-lib media-sound/jack2[dbus] sys-apps/dbus dev-libs/expat lash? ( !media-sound/lash ) python_single_target_python3_8? ( dev-lang/python:3.8[threads(+)] >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_9? ( dev-lang/python:3.9[threads(+)] >=dev-lang/python-exec-2:=[python_targets_python3_9] ) doc? ( app-doc/doxygen ) virtual/pkgconfig
 DESCRIPTION=LADI Session Handler - a session management system for JACK applications
 EAPI=7
 HOMEPAGE=https://ladish.org
 INHERIT=flag-o-matic python-single-r1 waf-utils vcs-snapshot
-IUSE=debug doc lash +python_single_target_python3_8
+IUSE=debug doc lash python_single_target_python3_8 python_single_target_python3_9
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=media-libs/alsa-lib media-sound/jack2[dbus] sys-apps/dbus dev-libs/expat lash? ( !media-sound/lash ) python_single_target_python3_8? ( dev-lang/python:3.8[threads(+)] >=dev-lang/python-exec-2:=[python_targets_python3_8] )
-REQUIRED_USE=^^ ( python_single_target_python3_8 )
+RDEPEND=media-libs/alsa-lib media-sound/jack2[dbus] sys-apps/dbus dev-libs/expat lash? ( !media-sound/lash ) python_single_target_python3_8? ( dev-lang/python:3.8[threads(+)] >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_9? ( dev-lang/python:3.9[threads(+)] >=dev-lang/python-exec-2:=[python_targets_python3_9] )
+REQUIRED_USE=^^ ( python_single_target_python3_8 python_single_target_python3_9 )
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/LADI/ladish/archive/ladish-1.tar.gz https://git.nedk.org/lad/ladish.git/plain/waf?id=f15b80e6394ba0cbb4b76aa1b32071bfb971a8fa -> ladish-1-waf-2.0.22
 _eclasses_=toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	ebdbaed22e873a5abe6205f41349b479	edos2unix	33e347e171066657f91f8b0c72ec8773	l10n	8cdd85e169b835d518bc2fd59f780d8e	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	2d5b3f4b315094768576b6799e4f926e	flag-o-matic	bc2e7662a4a9a8643be851982a837ddc	python-utils-r1	6e84b7d3d8d0bb1ee12774f4a66909e2	python-single-r1	d25ac9d5d91fe9d44fda6ec192aca11a	multiprocessing	cac3169468f893670dac3e7cb940e045	waf-utils	941688efbf28e7ea7a106e516fc9bc91	vcs-snapshot	b1abf460a493fc59ebb25de0df3f09dd
-_md5_=06983940dd346b2e718c4cde7d99c04f
+_md5_=32637778cfcde46c30e4a2f0d39d5747
