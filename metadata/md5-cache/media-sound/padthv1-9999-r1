@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=>=sci-libs/fftw-3 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 standalone? ( virtual/jack ) alsa? ( media-libs/alsa-lib ) lv2? ( media-libs/lv2 ) osc? ( media-libs/liblo )
 REQUIRED_USE=|| ( standalone lv2 ) alsa? ( standalone )
 SLOT=0
-_eclasses_=gnuconfig	262062cef0ba4f22b397193da514a350	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	libtool	241a8f577b9781a42a7421e53448a44e	autotools	9e63f92c2a5d867fea55ecb160c7d354	xdg-utils	27f9a2f19502b925ac117bd657aa2979	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_eclasses_=gnuconfig	262062cef0ba4f22b397193da514a350	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	libtool	241a8f577b9781a42a7421e53448a44e	autotools	2a36908d5f63f41614b450a2459567da	xdg-utils	27f9a2f19502b925ac117bd657aa2979	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
 _md5_=25e9cde746566bcafaefe8b8c083ddf9
