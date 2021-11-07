@@ -1,0 +1,16 @@
+DEFINED_PHASES=install postinst postrm preinst prepare unpack
+DEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+DESCRIPTION=Multi-platform music-creation system for production, performance and DJing
+EAPI=7
+HOMEPAGE=http://bitwig.com
+INHERIT=desktop unpacker xdg
+IUSE=abi_x86_32 +jack cpu_flags_x86_sse4_1
+KEYWORDS=~amd64
+LICENSE=Bitwig
+RDEPEND=app-arch/bzip2 dev-libs/expat gnome-extra/zenity jack? ( media-sound/jack2 ) media-libs/alsa-lib media-libs/fontconfig media-libs/freetype media-libs/libpng:0/16 media-libs/mesa sys-libs/zlib media-video/ffmpeg virtual/opengl virtual/udev x11-libs/cairo[X] x11-libs/gtk+:3 x11-libs/libX11[abi_x86_32?] x11-libs/libXau[abi_x86_32?] x11-libs/libXcursor x11-libs/libXdmcp[abi_x86_32?] x11-libs/libXext x11-libs/libXfixes x11-libs/libXrender x11-libs/libdrm x11-libs/libxcb[abi_x86_32?] x11-libs/libxkbcommon[X,abi_x86_32?] x11-libs/libxkbfile x11-libs/pixman x11-libs/xcb-util[abi_x86_32?] x11-libs/xcb-util-wm[abi_x86_32?] x11-libs/libXtst
+REQUIRED_USE=cpu_flags_x86_sse4_1
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://downloads.bitwig.com/stable/4.0.4/bitwig-studio-4.0.4.deb
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	unpacker	928e1f35ef78ba9fc2b214e29c2b55a4	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	xdg	6024fbc93167fad782e2032933654857
+_md5_=4234a4dcfc9018ff412b7ef9fd4d9e39
