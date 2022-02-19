@@ -19,13 +19,18 @@ fi
 # Disable news messages from portage as well as the IPC, network and PID sandbox to get rid of the
 # "Unable to unshare: EPERM" messages without requiring the container to be run in privileged mode
 # Disable rsync output
-export FEATURES="binpkg-multi-instance -news -ipc-sandbox -network-sandbox -pid-sandbox"
+export FEATURES="binpkg-multi-instance parallel-install -news -ipc-sandbox -network-sandbox -pid-sandbox"
 export PORTAGE_RSYNC_EXTRA_OPTS="-q"
 # Don't store any elogs by default
 export PORTAGE_ELOG_SYSTEM="echo"
 
+# Use 4 jobs to speedup emerges
+# CircleCI's large VMs have 4 CPUs and 15GB of memory
+# -j4 doesn't sature the CPUs so increase it by 1
+echo 'MAKEOPTS="-j5"' >> /etc/portage/make.conf
+
 # Only enable intel so LLVM doesn't get pulled in
-echo 'VIDEO_CARDS="intel"' > /etc/portage/make.conf
+echo 'VIDEO_CARDS="intel"' >> /etc/portage/make.conf
 
 # Disable LLVM support in mesa
 echo "media-libs/mesa -llvm" > /etc/portage/package.use/audio-overlay
