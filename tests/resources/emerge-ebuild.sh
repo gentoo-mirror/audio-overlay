@@ -24,16 +24,17 @@ export PORTAGE_RSYNC_EXTRA_OPTS="-q"
 # Don't store any elogs by default
 export PORTAGE_ELOG_SYSTEM="echo"
 
+# Only enable intel so LLVM doesn't get pulled in
+echo 'VIDEO_CARDS="intel"' > /etc/portage/make.conf
+
+# Disable LLVM support in mesa
+echo "media-libs/mesa -llvm" > /etc/portage/package.use/audio-overlay
+
 # Ensure we use dev-lang/rust-bin
-echo "dev-lang/rust" > /etc/portage/package.mask
+echo "dev-lang/rust" > /etc/portage/package.mask/audio-overlay
 
 # Show emerge info for troubleshooting purposes
 emerge --info
-
-# Update @world, to fix issues with out of date gentoo/stage3-amd64 images
-# Workaround for bug https://bugs.gentoo.org/723352
-emerge --quiet-build --buildpkg --usepkg sys-libs/libcap
-emerge --quiet-build --buildpkg --usepkg --update --changed-use --deep --with-bdeps=y @world
 
 # Emerge utilities/tools used by this script
 emerge -q --buildpkg --usepkg app-portage/portage-utils
@@ -78,7 +79,7 @@ do
 
   # Emerge dependencies first
   echo "Emerging dependencies"
-  emerge --quiet-build --buildpkg --usepkg --onlydeps --autounmask=y --autounmask-continue=y "=${PKG_CATEGORY}/${PKG_FULL_NAME}"
+  emerge --tree --quiet-build --buildpkg --usepkg --onlydeps --autounmask=y --autounmask-continue=y "=${PKG_CATEGORY}/${PKG_FULL_NAME}"
 
   # Emerge the ebuild itself
   echo "Emerging ${EBUILD}"
