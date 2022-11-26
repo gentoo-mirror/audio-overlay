@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install setup
-DEPEND=|| ( >=dev-lang/python-3.9.12:3.9[threads(+)] >=dev-lang/python-3.8.13:3.8[threads(+)] ) x11-libs/libX11 media-libs/fontconfig x11-libs/libXft x11-libs/cairo[X] virtual/jpeg:* media-libs/libpng:* opengl? ( media-libs/glu )
+DEPEND=|| ( >=dev-lang/python-3.9.15_p3:3.9[threads(+)] >=dev-lang/python-3.8.15_p3:3.8[threads(+)] ) x11-libs/libX11 media-libs/fontconfig x11-libs/libXft x11-libs/cairo[X] virtual/jpeg:* media-libs/libpng:* opengl? ( media-libs/glu )
 DESCRIPTION=FLTK fork, improved rendering via Cairo, streamlined and enhanced widget set
 EAPI=6
 HOMEPAGE=https://non.tuxfamily.org/wiki/NTK
@@ -11,5 +11,5 @@ RDEPEND=x11-libs/libX11 media-libs/fontconfig x11-libs/libXft x11-libs/cairo[X] 
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/gentoo-audio/ntk/archive/v1.3.1001.tar.gz -> ntk-1.3.1001.tar.gz
-_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	eqawarn	c9847c43b3253a276ae2eabddedab3d7	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	b9fc5e97e886514e5132f50465185401	python-any-r1	f2f00fb79b5e888b5011d4c51240ae97	waf-utils	b339462e3ff724f101dcab3ea5a7a341
+_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	eqawarn	c9847c43b3253a276ae2eabddedab3d7	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	25c880c1db58e21b80b684bacc964958	python-any-r1	f2f00fb79b5e888b5011d4c51240ae97	waf-utils	b339462e3ff724f101dcab3ea5a7a341
 _md5_=ef50d77fd8dca734830c83713a131162
