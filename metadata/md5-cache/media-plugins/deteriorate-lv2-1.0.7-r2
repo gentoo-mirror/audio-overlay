@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-cpp/gtkmm:2.4 x11-libs/gtk+:2 x11-libs/cairo media-libs/lv2 media-libs/lvtk[gtk2]
 SLOT=0
 SRC_URI=https://github.com/blablack/deteriorate-lv2/archive/v1.0.7.tar.gz -> deteriorate-lv2-1.0.7.tar.gz
-_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	eqawarn	c9847c43b3253a276ae2eabddedab3d7	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	25c880c1db58e21b80b684bacc964958	python-any-r1	f2f00fb79b5e888b5011d4c51240ae97	waf-utils	b339462e3ff724f101dcab3ea5a7a341
+_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	eqawarn	c9847c43b3253a276ae2eabddedab3d7	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	959e1d99122907eb98a3a660297a967e	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	25c880c1db58e21b80b684bacc964958	python-any-r1	f2f00fb79b5e888b5011d4c51240ae97	waf-utils	b339462e3ff724f101dcab3ea5a7a341
 _md5_=a36a01277b786e6b34b975056292298f
