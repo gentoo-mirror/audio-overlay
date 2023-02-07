@@ -1,4 +1,4 @@
-BDEPEND=|| ( >=dev-lang/python-3.9.16:3.9[threads(+)] ) >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=|| ( >=dev-lang/python-3.9.16-r1:3.9[threads(+)] ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare setup unpack
 DESCRIPTION=A set of LV2 and LADSPA plugins for glitch effects
 EAPI=8
@@ -7,5 +7,5 @@ INHERIT=git-r3 python-any-r1 waf-utils
 LICENSE=Apache-2.0
 PROPERTIES=live
 SLOT=0
-_eclasses_=git-r3	2347f8fe2d392b2a091191f94be37e6f	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	9a610728b9bcca1919234cceb35a1027	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	8d5c1c4ecef47fa1b4576a718c620d1d	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	waf-utils	44f2c60168a3ec2c5fb661d45c1cf397
+_eclasses_=git-r3	2347f8fe2d392b2a091191f94be37e6f	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	9a610728b9bcca1919234cceb35a1027	multilib	5ca4e49abed8e3a2f7b56920eadee157	python-utils-r1	429bfd4e8d8e39db5385ba5744f30788	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	waf-utils	44f2c60168a3ec2c5fb661d45c1cf397
 _md5_=129e2a33895032c59489e75dab8ebdea
