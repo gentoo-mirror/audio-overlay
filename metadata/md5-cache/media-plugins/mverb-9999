@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=media-libs/mesa x11-libs/libX11 standalone? ( virtual/jack ) dssi? ( media-libs/liblo )
 REQUIRED_USE=|| ( dssi ladspa lv2 vst standalone )
 SLOT=0
-_eclasses_=git-r3	2347f8fe2d392b2a091191f94be37e6f	desktop	021728fdc1b03b36357dbc89489e0f0d
+_eclasses_=git-r3	c57c50c922e121043788de0b40ada60a	desktop	021728fdc1b03b36357dbc89489e0f0d
 _md5_=b5c9583b57014e8df5e6053b2cf43b2d
