@@ -1,0 +1,16 @@
+BDEPEND=|| ( >=dev-lang/python-3.11.1-r1:3.11[threads(+)] >=dev-lang/python-3.10.9-r1:3.10[threads(+)] )
+DEFINED_PHASES=compile configure install setup
+DEPEND=udev? ( virtual/libudev ) osc? ( media-libs/liblo ) python? ( dev-python/cython )
+DESCRIPTION=Library for easy interaction with monome devices
+EAPI=8
+HOMEPAGE=https://github.com/monome/libmonome
+INHERIT=python-any-r1 waf-utils
+IUSE=osc python udev
+KEYWORDS=~amd64
+LICENSE=ISC
+RDEPEND=udev? ( virtual/libudev ) osc? ( media-libs/liblo ) python? ( dev-python/cython )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/monome/libmonome/archive/v1.4.3.tar.gz -> libmonome-1.4.3.tar.gz
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	d1408425c7c4a7669b9b17735404b693	python-utils-r1	4544ab96b58e177dc52d75e42f5ee307	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	waf-utils	5abcf99e5070e9e32e7b4d64ad438a65
+_md5_=1bcdc19bf02230a4f2f276861189a092
