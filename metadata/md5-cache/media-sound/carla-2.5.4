@@ -1,16 +1,16 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) python_single_target_python3_10? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_10(-)] ) virtual/jack alsa? ( media-libs/alsa-lib ) gtk? ( x11-libs/gtk+:3 ) gtk2? ( x11-libs/gtk+:2 ) osc? ( media-libs/liblo media-libs/pyliblo ) pulseaudio? ( media-sound/pulseaudio ) rdf? ( dev-python/rdflib ) sf2? ( media-sound/fluidsynth ) sndfile? ( media-libs/libsndfile ) X? ( x11-base/xorg-server )
+DEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) python_single_target_python3_11? ( >=dev-lang/python-3.11.1-r1:3.11 ) python_single_target_python3_10? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_11(-)] ) virtual/jack alsa? ( media-libs/alsa-lib ) gtk? ( x11-libs/gtk+:3 ) gtk2? ( x11-libs/gtk+:2 ) osc? ( media-libs/liblo media-libs/pyliblo ) pulseaudio? ( media-sound/pulseaudio ) rdf? ( dev-python/rdflib ) sf2? ( media-sound/fluidsynth ) sndfile? ( media-libs/libsndfile ) X? ( x11-base/xorg-server )
 DESCRIPTION=Fully-featured audio plugin host, supports many audio drivers and plugin formats
 EAPI=7
 HOMEPAGE=http://kxstudio.linuxaudio.org/Applications:Carla
 INHERIT=python-single-r1 xdg-utils
-IUSE=alsa gtk gtk2 opengl osc pulseaudio rdf sf2 sndfile X +python_single_target_python3_10
+IUSE=alsa gtk gtk2 opengl osc pulseaudio rdf sf2 sndfile X python_single_target_python3_10 python_single_target_python3_11
 KEYWORDS=~amd64
 LICENSE=GPL-2 LGPL-3
-RDEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) python_single_target_python3_10? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_10(-)] ) virtual/jack alsa? ( media-libs/alsa-lib ) gtk? ( x11-libs/gtk+:3 ) gtk2? ( x11-libs/gtk+:2 ) osc? ( media-libs/liblo media-libs/pyliblo ) pulseaudio? ( media-sound/pulseaudio ) rdf? ( dev-python/rdflib ) sf2? ( media-sound/fluidsynth ) sndfile? ( media-libs/libsndfile ) X? ( x11-base/xorg-server )
-REQUIRED_USE=^^ ( python_single_target_python3_10 )
+RDEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) python_single_target_python3_11? ( >=dev-lang/python-3.11.1-r1:3.11 ) python_single_target_python3_10? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_11(-)] ) virtual/jack alsa? ( media-libs/alsa-lib ) gtk? ( x11-libs/gtk+:3 ) gtk2? ( x11-libs/gtk+:2 ) osc? ( media-libs/liblo media-libs/pyliblo ) pulseaudio? ( media-sound/pulseaudio ) rdf? ( dev-python/rdflib ) sf2? ( media-sound/fluidsynth ) sndfile? ( media-libs/libsndfile ) X? ( x11-base/xorg-server )
+REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 )
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/falkTX/Carla/archive/v2.5.4.tar.gz -> carla-2.5.4.tar.gz
 _eclasses_=eapi8-dosym	741bfa77afb2a9321261501aca58c208	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	104e1332efb829e2f7cbf89307a474f1	python-utils-r1	d676fb844e9408f4290d20bc7312f8bb	python-single-r1	75118e916668a74c660a13b0ecb22562	xdg-utils	baea6080dd821f5562d715887954c9d3
-_md5_=924b87aabc98da5a5248432ee66da960
+_md5_=a70609c2ece509256596edbdf1fa98a2
