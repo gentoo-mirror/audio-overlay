@@ -1,0 +1,14 @@
+BDEPEND=|| ( >=dev-lang/python-3.11.3:3.11[threads(+)] >=dev-lang/python-3.10.11:3.10[threads(+)] ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install setup unpack
+DEPEND=virtual/libudev media-libs/liblo >=media-libs/libmonome-1.4.1 dev-libs/libuv zeroconf? ( net-dns/avahi[mdnsresponder-compat] )
+DESCRIPTION=Multi-device, bonjour-capable monome OSC server
+EAPI=8
+HOMEPAGE=https://github.com/monome/serialosc
+INHERIT=git-r3 python-any-r1 waf-utils
+IUSE=zeroconf
+LICENSE=ISC
+PROPERTIES=live
+RDEPEND=virtual/libudev media-libs/liblo >=media-libs/libmonome-1.4.1 dev-libs/libuv zeroconf? ( net-dns/avahi[mdnsresponder-compat] )
+SLOT=0
+_eclasses_=git-r3	27e13c09a4c7e4c78ac812f74727e676	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	ba15b8b81f30ca448294d759a9f7902c	python-any-r1	d2955aaac8daaaa69fcc6dc93ed19f29	waf-utils	be1df8dc616c09387b18633b4155fcb5
+_md5_=610bd836f5da560ba114784e4f6d423d
