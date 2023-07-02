@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup unpack
-DEPEND=media-libs/alsa-lib media-sound/jack2[dbus] sys-apps/dbus dev-libs/expat lash? ( !media-sound/lash ) python_single_target_python3_10? ( >=dev-lang/python-3.10.11:3.10[threads(+)] ) python_single_target_python3_11? ( >=dev-lang/python-3.11.3:3.11[threads(+)] ) doc? ( app-doc/doxygen ) virtual/pkgconfig
+DEPEND=media-libs/alsa-lib media-sound/jack2[dbus] sys-apps/dbus dev-libs/expat lash? ( !media-sound/lash ) python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10[threads(+)] ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11[threads(+)] ) doc? ( app-doc/doxygen ) virtual/pkgconfig
 DESCRIPTION=LADI Session Handler - a session management system for JACK applications
 EAPI=7
 HOMEPAGE=https://ladish.org
@@ -7,10 +7,10 @@ INHERIT=flag-o-matic python-single-r1 waf-utils vcs-snapshot
 IUSE=debug doc lash python_single_target_python3_10 python_single_target_python3_11
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=media-libs/alsa-lib media-sound/jack2[dbus] sys-apps/dbus dev-libs/expat lash? ( !media-sound/lash ) python_single_target_python3_10? ( >=dev-lang/python-3.10.11:3.10[threads(+)] ) python_single_target_python3_11? ( >=dev-lang/python-3.11.3:3.11[threads(+)] )
+RDEPEND=media-libs/alsa-lib media-sound/jack2[dbus] sys-apps/dbus dev-libs/expat lash? ( !media-sound/lash ) python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10[threads(+)] ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11[threads(+)] )
 REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 )
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/LADI/ladish/archive/ladish-1.tar.gz https://git.nedk.org/lad/ladish.git/plain/waf?id=f15b80e6394ba0cbb4b76aa1b32071bfb971a8fa -> ladish-1-waf-2.0.22
-_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	a34d5f83235297b76d71eaf8deb53768	python-single-r1	75118e916668a74c660a13b0ecb22562	waf-utils	be1df8dc616c09387b18633b4155fcb5	vcs-snapshot	eab6d8533446763c2e9777d8bbd1594e
+_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	a013e16d5d896b3d8be68dd2a0e846ea	python-single-r1	75118e916668a74c660a13b0ecb22562	waf-utils	be1df8dc616c09387b18633b4155fcb5	vcs-snapshot	eab6d8533446763c2e9777d8bbd1594e
 _md5_=b71f7cef783e8933de07ecca0d76128c
