@@ -1,15 +1,15 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install postinst postrm prepare setup unpack
-DEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10 ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11 ) python_single_target_python3_10? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_11(-)] ) virtual/jack alsa? ( media-libs/alsa-lib ) gtk? ( x11-libs/gtk+:3 ) gtk2? ( x11-libs/gtk+:2 ) osc? ( media-libs/liblo media-libs/pyliblo ) pulseaudio? ( media-sound/pulseaudio ) rdf? ( dev-python/rdflib ) sf2? ( media-sound/fluidsynth ) sndfile? ( media-libs/libsndfile ) X? ( x11-base/xorg-server )
+DEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10 ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11 ) python_single_target_python3_10? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_11(-)] ) virtual/jack alsa? ( media-libs/alsa-lib ) gtk? ( x11-libs/gtk+:3 ) gtk2? ( x11-libs/gtk+:2 ) osc? ( media-libs/liblo media-libs/pyliblo ) pulseaudio? ( media-libs/libpulse ) rdf? ( dev-python/rdflib ) sf2? ( media-sound/fluidsynth ) sndfile? ( media-libs/libsndfile ) X? ( x11-base/xorg-server )
 DESCRIPTION=Fully-featured audio plugin host, supports many audio drivers and plugin formats
-EAPI=7
+EAPI=8
 HOMEPAGE=http://kxstudio.linuxaudio.org/Applications:Carla
 INHERIT=python-single-r1 xdg-utils git-r3
 IUSE=alsa gtk gtk2 opengl osc pulseaudio rdf sf2 sndfile X python_single_target_python3_10 python_single_target_python3_11
 LICENSE=GPL-2 LGPL-3
 PROPERTIES=live
-RDEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10 ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11 ) python_single_target_python3_10? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_11(-)] ) virtual/jack alsa? ( media-libs/alsa-lib ) gtk? ( x11-libs/gtk+:3 ) gtk2? ( x11-libs/gtk+:2 ) osc? ( media-libs/liblo media-libs/pyliblo ) pulseaudio? ( media-sound/pulseaudio ) rdf? ( dev-python/rdflib ) sf2? ( media-sound/fluidsynth ) sndfile? ( media-libs/libsndfile ) X? ( x11-base/xorg-server )
+RDEPEND=python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10 ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11 ) python_single_target_python3_10? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/PyQt5[gui,opengl?,svg,widgets,python_targets_python3_11(-)] ) virtual/jack alsa? ( media-libs/alsa-lib ) gtk? ( x11-libs/gtk+:3 ) gtk2? ( x11-libs/gtk+:2 ) osc? ( media-libs/liblo media-libs/pyliblo ) pulseaudio? ( media-libs/libpulse ) rdf? ( dev-python/rdflib ) sf2? ( media-sound/fluidsynth ) sndfile? ( media-libs/libsndfile ) X? ( x11-base/xorg-server )
 REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 )
 SLOT=0
-_eclasses_=eapi8-dosym	5ac4857ad078256d939c44f7c64197a9	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a013e16d5d896b3d8be68dd2a0e846ea	python-single-r1	75118e916668a74c660a13b0ecb22562	xdg-utils	baea6080dd821f5562d715887954c9d3	git-r3	27e13c09a4c7e4c78ac812f74727e676
-_md5_=a70609c2ece509256596edbdf1fa98a2
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a013e16d5d896b3d8be68dd2a0e846ea	python-single-r1	75118e916668a74c660a13b0ecb22562	xdg-utils	baea6080dd821f5562d715887954c9d3	git-r3	27e13c09a4c7e4c78ac812f74727e676
+_md5_=6b5f67b8240d82c462971c3f1b416fca
