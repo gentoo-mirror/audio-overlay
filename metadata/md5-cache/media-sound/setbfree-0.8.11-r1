@@ -11,5 +11,5 @@ RDEPEND=virtual/jack >=media-libs/alsa-lib-1.0.0:= media-libs/liblo:= media-libs
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/pantherb/setBfree/archive/v0.8.11.tar.gz -> setbfree-0.8.11.tar.gz
-_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0
+_eclasses_=toolchain-funcs	67b3e3d8916d690003f645486ed86aac	multilib	c19072c3cd7ac5cb21de013f7e9832e0
 _md5_=96f214c42f47b7a13ef39f1098332900
