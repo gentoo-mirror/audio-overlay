@@ -12,5 +12,5 @@ RDEPEND=x11-libs/libX11 media-libs/fontconfig x11-libs/libXft x11-libs/cairo[X] 
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/gentoo-audio/ntk/archive/v1.3.1001.tar.gz -> ntk-1.3.1001.tar.gz
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	12aa0037eb004139215ff04894d52b28	python-any-r1	f5169813d1619761b459800587005fd2	waf-utils	be1df8dc616c09387b18633b4155fcb5
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	12aa0037eb004139215ff04894d52b28	python-any-r1	f5169813d1619761b459800587005fd2	waf-utils	be1df8dc616c09387b18633b4155fcb5
 _md5_=387989315350bcb833bf5e65d7623417
