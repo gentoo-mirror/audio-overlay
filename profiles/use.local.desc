@@ -31,6 +31,7 @@ media-sound/drumkv1:lv2 - Enable building of LV2 plugin
 media-sound/drumkv1:standalone - Enable building of standalone application
 media-sound/padthv1:lv2 - Enable building of LV2 plugin
 media-sound/padthv1:standalone - Enable building of standalone application
+media-sound/pure-data:double-precision - Use double- rather than single-precision floating-point representation
 media-sound/samplv1:lv2 - Enable building of LV2 plugin
 media-sound/samplv1:standalone - Enable building of standalone application
 media-sound/sc3-plugins:supernova - Enable building the supernova server

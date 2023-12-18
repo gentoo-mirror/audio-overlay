@@ -20,7 +20,7 @@ media-sound/ladish 1-r2 9999: LADI Session Handler - a session management system
 media-sound/luppp 1.2.1 9999: Live performance looping tool
 media-sound/new-session-manager 1.4.0 1.5.0 9999: A tool to assist music production by grouping standalone programs into sessions
 media-sound/padthv1 0.9.18 0.9.19 0.9.21 9999-r1: Old-school polyphonic additive synthesizer
-media-sound/pure-data 0.51.3 0.51.4 9999: Visual programming language for multimedia
+media-sound/pure-data 0.51.3 0.51.4 0.54.1 9999: Visual programming language for multimedia
 media-sound/samplv1 0.9.18 0.9.19 0.9.21 9999-r1: Old-school polyphonic sampler
 media-sound/sc3-plugins 3.11.0 3.11.1 9999: Third party plugins for SuperCollider
 media-sound/sequencer64 0.96.7 0.96.8 9999: Reboot of seq24, a minimal loop based midi sequencer
