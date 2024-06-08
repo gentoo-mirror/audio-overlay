@@ -23,7 +23,6 @@ media-sound/padthv1 0.9.18 0.9.19 0.9.21 9999-r1: Old-school polyphonic additive
 media-sound/pure-data 0.51.3 0.51.4 0.54.1 9999: Visual programming language for multimedia
 media-sound/samplv1 0.9.18 0.9.19 0.9.21 9999-r1: Old-school polyphonic sampler
 media-sound/sc3-plugins 3.11.0 3.11.1 9999: Third party plugins for SuperCollider
-media-sound/sequencer64 0.96.7 0.96.8 9999: Reboot of seq24, a minimal loop based midi sequencer
 media-sound/serialosc 1.4.3 9999: Multi-device, bonjour-capable monome OSC server
 media-sound/setbfree 0.8.10 0.8.11-r1 9999: MIDI controlled DSP tonewheel organ
 media-sound/synthv1 0.9.18 0.9.19 0.9.21 9999-r1: Old-school all-digital 4-oscillator subtractive polyphonic synthesizer
