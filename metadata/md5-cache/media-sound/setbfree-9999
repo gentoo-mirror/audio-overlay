@@ -1,0 +1,15 @@
+BDEPEND=sys-apps/help2man virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install prepare unpack
+DEPEND=virtual/jack >=media-libs/alsa-lib-1.0.0:= media-libs/liblo:= media-libs/lv2 convolution? ( media-libs/libsndfile:= >=media-libs/zita-convolver-3.1.0:= ) media-fonts/dejavu media-libs/ftgl x11-libs/libX11
+DESCRIPTION=MIDI controlled DSP tonewheel organ
+EAPI=8
+HOMEPAGE=http://setbfree.org
+INHERIT=toolchain-funcs multilib git-r3
+IUSE=convolution
+LICENSE=GPL-2+
+PROPERTIES=live
+RDEPEND=virtual/jack >=media-libs/alsa-lib-1.0.0:= media-libs/liblo:= media-libs/lv2 convolution? ( media-libs/libsndfile:= >=media-libs/zita-convolver-3.1.0:= ) media-fonts/dejavu media-libs/ftgl x11-libs/libX11
+RESTRICT=mirror
+SLOT=0
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	multilib	b2a329026f2e404e9e371097dda47f96	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=4ab9a8d5a570eb0ce8ebee0f0a31240c

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-cpp/gtkmm:2.4 >=dev-libs/libsigc++-2.2:2 media-libs/libpng:= media-libs/alsa-lib jack? ( virtual/jack ) lash? ( || ( media-sound/lash media-sound/ladish[lash] ) ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 )
+DESCRIPTION=Reboot of seq24, a minimal loop based midi sequencer
+EAPI=8
+HOMEPAGE=https://github.com/ahlstromcj/sequencer64
+IUSE=cli jack lash qt5
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=dev-cpp/gtkmm:2.4 >=dev-libs/libsigc++-2.2:2 media-libs/libpng:= media-libs/alsa-lib jack? ( virtual/jack ) lash? ( || ( media-sound/lash media-sound/ladish[lash] ) ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/ahlstromcj/sequencer64/archive/0.96.7.tar.gz -> sequencer64-0.96.7.tar.gz
+_md5_=249a47448a05ed29ccf8586ec3de2a75
