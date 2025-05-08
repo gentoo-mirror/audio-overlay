@@ -10,5 +10,5 @@ LICENSE=GPL-2 || ( GPL-2 AFL-2.1 )
 RDEPEND=sys-apps/dbus
 SLOT=0
 SRC_URI=https://github.com/LADI/cdbus/archive/32cb2e2519e4088421f2de1b2d46003d1cac6d6c.tar.gz -> cdbus-1.0_pre20230703.gh.tar.gz
-_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	python-utils-r1	de71d9571aa267f353b9e8ab4666732e	python-any-r1	891415dfe39ad9b41b461f2b86354af0	multilib	b2a329026f2e404e9e371097dda47f96	waf-utils	1d6e4c1706086040b1ebd9e6aa170341
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	python-utils-r1	e6fe2c451b7e577e827165580e5bdd64	python-any-r1	891415dfe39ad9b41b461f2b86354af0	multilib	b2a329026f2e404e9e371097dda47f96	waf-utils	1d6e4c1706086040b1ebd9e6aa170341
 _md5_=ba00a8f6e2ccc960d76344bb58d378d3
